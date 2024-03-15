@@ -17,6 +17,7 @@ const Graph: React.FC<GraphProps> = ({ indicator }) => {
         date: item.date,
         value: item.value,
       }));
+      console.log(indicator.name, graphData);
       setData(graphData);
     };
     getData();
